@@ -12,9 +12,7 @@
     <title>Karwaan-e-Umeed | Home</title>
   </head>
   <body class="text-gray-800">
-    <!-- Navbar + Hero Section with Background -->
     <header class="relative bg-cover bg-center lg:bg-fixed bg-no-repeat" style="background-image: url('assets/hero-image.jpg')">
-      <!-- Overlay -->
       <div class="absolute inset-0 bg-black/40"></div>
 
       <!-- Navbar -->
@@ -22,7 +20,6 @@
         <!-- Logo -->
         <div class="text-4xl md:text-5xl uppercase font-bold text-green-300">KU.</div>
 
-        <!-- Center Menu -->
         <ul class="hidden md:flex space-x-6 font-medium mx-auto">
           <li><a href="index.html" class="hover:text-green-300 transition">Home</a></li>
           <li><a href="survey.html" class="hover:text-green-300 transition">Survey</a></li>
@@ -36,7 +33,7 @@
           Support Our Cause
         </a>
 
-        <!-- Mobile Hamburger -->
+        <!-- Mobile Icon -->
         <button class="md:hidden text-white" id="menu-btn">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
@@ -126,9 +123,7 @@
           </div>
 
           <!-- Card 3 -->
-          <div
-            class="bg-white rounded-lg shadow-lg overflow-hidden h-[48rem] md:h-[46rem] flex flex-col hover:shadow-2xl transition-shadow duration-300"
-          >
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden h-[48rem] flex flex-col hover:shadow-2xl transition-shadow duration-300">
             <img src="assets/impact-image.jpg" alt="Why Would It Create an Impact?" class="w-full h-[25rem] object-cover flex-none" />
             <div class="flex-1 p-6 flex flex-col justify-between">
               <div>
@@ -150,7 +145,6 @@
     <!-- Footer -->
     <footer class="bg-green-500 text-white py-10">
       <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Logo & Tagline -->
         <div class="text-center md:text-left">
           <h1 class="text-4xl font-semibold mb-2">KU.</h1>
           <p class="text-white/90 text-sm">
@@ -158,7 +152,6 @@
           </p>
         </div>
 
-        <!-- Quick Links -->
         <div class="text-center">
           <h4 class="font-semibold mb-3">Quick Links</h4>
           <ul class="space-y-2">
@@ -170,7 +163,6 @@
           </ul>
         </div>
 
-        <!-- Contact & Address -->
         <div class="text-center md:text-right text-sm md:text-base">
           <h4 class="font-semibold mb-3">Contact Us</h4>
           <p class="text-gray-200">Ground Floor, Khokhar Plaza</p>
@@ -184,13 +176,11 @@
         </div>
       </div>
 
-      <!-- Bottom Bar -->
       <div class="mt-8 border-t border-green-600 pt-4 text-center text-white/90 text-sm">
         &copy; <span id="current-year"></span> Karwaan‑e‑Umeed. All rights reserved.
       </div>
     </footer>
 
-    <!-- JS for Mobile Menu -->
     <script>
       const menuBtn = document.getElementById("menu-btn");
       const closeMenu = document.getElementById("close-menu");
