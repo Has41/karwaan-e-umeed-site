@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@500&display=swap"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Karwaan-e-Umeed | Perspectives</title>
+  </head>
+  <body>
+    <header
+      class="relative bg-cover bg-center lg:bg-fixed bg-no-repeat"
+      style="background-image: url('../assets/hero-image.jpg')"
+    >
+      <div class="absolute inset-0 bg-black/40"></div>
+
+      <!-- Navbar -->
+      <nav
+        class="relative z-10 max-w-7xl mx-auto px-4 py-4 flex items-center justify-between text-white"
+      >
+        <!-- Logo -->
+        <div class="text-4xl md:text-5xl uppercase font-bold text-green-300">
+          KU.
+        </div>
+
+        <ul class="hidden md:flex space-x-6 font-medium mx-auto">
+          <li>
+            <a href="../index.html" class="hover:text-green-300 transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-green-300 transition">Survey</a>
+          </li>
+          <li>
+            <a class="hover:text-green-300 transition">Perspectives</a>
+          </li>
+          <li>
+            <a
+              href="../insights/insights.html"
+              class="hover:text-green-300 transition"
+              >Insights</a
+            >
+          </li>
+          <li>
+            <a class="hover:text-green-300 transition">Fundraising & Office</a>
+          </li>
+        </ul>
+
+        <!-- Support Button -->
+        <a
+          class="hidden md:block bg-green-400 text-white font-semibold px-4 py-2 rounded-lg hover:bg-green-500 transition"
+        >
+          Support Our Cause
+        </a>
+
+        <!-- Mobile Icon -->
+        <button class="md:hidden text-white" id="menu-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+            />
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Mobile Sidebar -->
+      <div
+        id="mobile-menu"
+        class="fixed top-0 right-0 w-64 h-full bg-white text-black/80 transform translate-x-full transition-transform duration-300 z-50 md:hidden"
+      >
+        <div
+          class="p-4 flex justify-between items-center border-b border-green-700"
+        >
+          <span class="text-xl font-bold">Menu</span>
+          <!-- Close Button -->
+          <button id="close-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <ul class="p-4 space-y-4">
+          <li>
+            <a
+              href="../index.html"
+              class="block hover:text-green-300 transition-all duration-300"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="block hover:text-green-300">Survey</a>
+          </li>
+          <li>
+            <a class="block hover:text-green-300">Perspectives</a>
+          </li>
+          <li>
+            <a
+              href="../insights/insights.html"
+              class="block hover:text-green-300"
+              >Insights</a
+            >
+          </li>
+          <li>
+            <a class="block hover:text-green-300">Fundraising & Office</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Hero Section -->
+      <div
+        class="relative flex items-center flex-col justify-between gap-y-4 z-10 text-center text-white py-32 space-y-10 px-4"
+      >
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Perspectives on Child Labor
+        </h1>
+        <p class="text-base md:text-lg max-w-2xl mb-6">
+          Voices from individuals, activists, and officials highlighting the
+          urgent need to combat child labor.
+        </p>
+        <!-- <a
+          href="fundraising.html"
+          class="bg-green-400 text-white font-semibold px-6 py-3 rounded-lg hover:bg-green-500 transition"
+        >
+          Support Our Cause
+        </a> -->
+      </div>
+    </header>
+    <section class="py-16 bg-gray-50">
+      <div class="text-center max-w-2xl mx-auto mb-12 px-4">
+        <h2 class="text-3xl font-bold text-green-700 mb-4">Perspectives</h2>
+        <p class="text-gray-600">
+          Explore the real stories and opinions from people across different
+          walks of life.
+        </p>
+      </div>
+
+      <!-- Carousel Container -->
+      <div class="relative max-w-[75%] lg:max-w-4xl mx-auto">
+        <div class="overflow-hidden swiper-container">
+          <div
+            id="carousel"
+            class="flex swiper-wrapper transition-transform duration-500 ease-in-out"
+          >
+            <!-- Slide 1 -->
+            <div
+              class="swiper-slide flex-none w-full w-1/4 md:w-1/2 lg:w-1/3 p-6 bg-white rounded-lg shadow-md text-center"
+            >
+              <div
+                class="w-20 h-20 mx-auto rounded-full mb-4 bg-gray-200 flex items-center justify-center text-xl font-semibold text-green-600"
+              >
+                S
+              </div>
+              <h3 class="text-xl font-semibold text-green-700 mb-2">
+                Sarah Khan
+              </h3>
+              <p class="text-gray-600 text-sm md:text-base">
+                “Child labor destroys futures. Our goal is to create a world
+                where every child can thrive.”
+              </p>
+            </div>
+            <!-- Slide 2 -->
+            <div
+              class="swiper-slide flex-none w-full w-1/4 md:w-1/2 lg:w-1/3 p-6 bg-white rounded-lg shadow-md text-center"
+            >
+              <div
+                class="w-20 h-20 mx-auto rounded-full mb-4 bg-gray-200 flex items-center justify-center text-xl font-semibold text-green-600"
+              >
+                I
+              </div>
+              <h3 class="text-xl font-semibold text-green-700 mb-2">
+                Imran Ali
+              </h3>
+              <p class="text-gray-600 text-sm md:text-base">
+                “Government initiatives must enforce labor laws and provide
+                alternatives for families.”
+              </p>
+            </div>
+            <!-- Slide 3 -->
+            <div
+              class="swiper-slide flex-none w-full w-1/4 md:w-1/2 lg:w-1/3 p-6 bg-white rounded-lg shadow-md text-center"
+            >
+              <div
+                class="w-20 h-20 mx-auto rounded-full mb-4 bg-gray-200 flex items-center justify-center text-xl font-semibold text-green-600"
+              >
+                A
+              </div>
+              <h3 class="text-xl font-semibold text-green-700 mb-2">
+                Dr. Ayesha Malik
+              </h3>
+              <p class="text-gray-600 text-sm md:text-base">
+                “Education is the key to breaking the cycle of poverty and child
+                exploitation.”
+              </p>
+            </div>
+
+            <div
+              class="swiper-slide flex-none w-full w-1/4 md:w-1/2 lg:w-1/3 p-6 bg-white rounded-lg shadow-md text-center"
+            >
+              <div
+                class="w-20 h-20 mx-auto rounded-full mb-4 bg-gray-200 flex items-center justify-center text-xl font-semibold text-green-600"
+              >
+                N
+              </div>
+              <h3 class="text-xl font-semibold text-green-700 mb-2">
+                New Person
+              </h3>
+              <p class="text-gray-600 text-sm md:text-base">
+                “Your new testimonial or quote goes here.”
+              </p>
+            </div>
+            <div
+              class="swiper-slide flex-none w-full w-1/4 md:w-1/2 lg:w-1/3 p-6 bg-white rounded-lg shadow-md text-center"
+            >
+              <div
+                class="w-20 h-20 mx-auto rounded-full mb-4 bg-gray-200 flex items-center justify-center text-xl font-semibold text-green-600"
+              >
+                N
+              </div>
+              <h3 class="text-xl font-semibold text-green-700 mb-2">
+                New Person
+              </h3>
+              <p class="text-gray-600 text-sm md:text-base">
+                “Your new testimonial or quote goes here.”
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <button
+          id="prev"
+          class="absolute swiper-button-prev cursor-pointer hidden lg:flex top-1/2 -left-14 transform -translate-y-1/2 text-black/80 rounded-full z-10"
+          aria-label="Previous slide"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-8 text-green-500"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
+          </svg>
+        </button>
+        <button
+          id="next"
+          class="absolute swiper-button-next cursor-pointer top-1/2 -right-12 hidden lg:flex transform -translate-y-1/2 text-black/80 rounded-full z-10"
+          aria-label="Next slide"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-8 text-green-500"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <footer class="bg-green-500 text-white py-10">
+      <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center md:text-left">
+          <h1 class="text-4xl font-semibold mb-2">KU.</h1>
+          <p class="text-white/90 text-sm">
+            Together, we strive to end child labor through community‑driven
+            initiatives, research, and sustainable partnerships.
+          </p>
+        </div>
+
+        <div class="text-center">
+          <h4 class="font-semibold mb-3">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="survey.html" class="hover:underline">Survey</a></li>
+            <li>
+              <a href="perspectives.html" class="hover:underline"
+                >Perspectives</a
+              >
+            </li>
+            <li>
+              <a href="pakistan.html" class="hover:underline"
+                >Child Labor in Pakistan</a
+              >
+            </li>
+            <li>
+              <a href="fundraising.html" class="hover:underline"
+                >Fundraising & Office</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-center md:text-right text-sm md:text-base">
+          <h4 class="font-semibold mb-3">Contact Us</h4>
+          <p class="text-white/90">Ground Floor, Khokhar Plaza</p>
+          <p class="text-white/90">Rehmanpura, Lahore</p>
+          <p class="mt-2">
+            <a href="mailto:info@karwaaneumeed.org" class="hover:underline"
+              >info@karwaaneumeed.org</a
+            >
+          </p>
+          <p class="mt-1">
+            <a href="tel:+923001234567" class="hover:underline"
+              >+92 300 1234567</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="mt-8 border-t border-green-600 pt-4 text-center text-white/90 text-sm"
+      >
+        &copy; <span id="current-year"></span> Karwaan‑e‑Umeed. All rights
+        reserved.
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>
