@@ -19,7 +19,7 @@ document.getElementById("current-year").textContent = new Date().getFullYear()
 document.addEventListener("DOMContentLoaded", () => {
   new Swiper(".swiper-container", {
     loop: true,
-    autoplay: { delay: 5000, disableOnInteraction: false },
+    autoplay: { delay: 3000, disableOnInteraction: false },
     spaceBetween: 20,
     breakpoints: {
       0: { slidesPerView: 1 },
